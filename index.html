@@ -1,5 +1,6 @@
 <!DOCTYPE html><html lang="en"><head><title>index</title></head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"><meta name="groc-relative-root" content=""><meta name="groc-document-path" content="index"><meta name="groc-project-path" content="README.md"><meta name="groc-github-url" content="https://github.com/aureooms/js-adjacency-matrix"><link rel="stylesheet" type="text/css" media="all" href="assets/style.css"><script type="text/javascript" src="assets/behavior.js"></script><body><div id="meta"><div class="file-path"><a href="https://github.com/aureooms/js-adjacency-matrix/blob/master/README.md">README.md</a></div></div><div id="document"><div class="segment"><div class="comments "><div class="wrapper"><h1 id="-js-adjacency-matrix-http-aureooms-github-io-js-adjacency-matrix-"><a href="http://aureooms.github.io/js-adjacency-matrix">js-adjacency-matrix</a></h1>
-<p>Adjacency matrix code bricks for JavaScript</p>
+<p>Adjacency matrix code bricks for JavaScript.</p>
+<pre><code class="lang-js"><span class="hljs-keyword">for</span> ( <span class="hljs-keyword">let</span> [ u , v , w ] <span class="hljs-keyword">of</span> E( G ) ) ... ;</code></pre>
 <p><a href="https://raw.githubusercontent.com/aureooms/js-adjacency-matrix/master/LICENSE"><img src="http://img.shields.io/npm/l/aureooms-js-adjacency-matrix.svg?style=flat" alt="NPM license"></a>
 <a href="https://www.npmjs.org/package/aureooms-js-adjacency-matrix"><img src="http://img.shields.io/npm/v/aureooms-js-adjacency-matrix.svg?style=flat" alt="NPM version"></a>
 <a href="http://bower.io/search/?q=aureooms-js-adjacency-matrix"><img src="http://img.shields.io/bower/v/aureooms-js-adjacency-matrix.svg?style=flat" alt="Bower version"></a>
@@ -52,4 +53,34 @@ jspm install npm:aureooms-js-adjacency-matrix</code></pre>
 <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"bower_components/aureooms-js-adjacency-matrix/js/dist/adjacency-matrix.min.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span></code></pre>
 <p>Alternatively, you can use any tool mentioned <a href="http://bower.io/docs/tools/">here</a>.</p>
 <h3 id="jam">jam</h3>
-<pre><code class="lang-js"><span class="hljs-built_in">require</span>( [ <span class="hljs-string">"aureooms-js-adjacency-matrix"</span> ] , <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"> adjacencymatrix </span>) </span>{ ... } ) ;</code></pre></div></div></div></div></body></html>
+<pre><code class="lang-js"><span class="hljs-built_in">require</span>( [ <span class="hljs-string">"aureooms-js-adjacency-matrix"</span> ] , <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"> adjacencymatrix </span>) </span>{ ... } ) ;</code></pre>
+<h2 id="use">Use</h2>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> Graph = adjacencymatrix.Matrix.References ;
+
+<span class="hljs-keyword">let</span> { V , E , N } = <span class="hljs-built_in">require</span>( <span class="hljs-string">"aureooms-js-graph-theory-notation"</span> ) ;
+
+<span class="hljs-keyword">let</span> G = <span class="hljs-keyword">new</span> Graph( ) ;
+
+<span class="hljs-keyword">let</span> u = G.vadd( <span class="hljs-string">"some satellite data"</span> ) ;
+
+<span class="hljs-keyword">let</span> v = G.vadd( [ <span class="hljs-string">"some"</span> , <span class="hljs-string">"satellite"</span> , <span class="hljs-string">"data"</span> ] ) ;
+
+<span class="hljs-keyword">let</span> w = <span class="hljs-number">7</span> ; <span class="hljs-comment">// weight</span>
+
+<span class="hljs-keyword">let</span> e = G.eadd( u , v , w ) ;
+
+<span class="hljs-keyword">for</span> ( <span class="hljs-keyword">let</span> _v <span class="hljs-keyword">of</span> V( G ) ) ... ;
+
+<span class="hljs-keyword">for</span> ( <span class="hljs-keyword">let</span> [ _u , _v , _w ] <span class="hljs-keyword">of</span> E( G ) ) ... ;
+
+<span class="hljs-keyword">for</span> ( <span class="hljs-keyword">let</span> [ _u , _v , _w ] <span class="hljs-keyword">of</span> G.out( u ) ... ;
+
+<span class="hljs-keyword">for</span> ( <span class="hljs-keyword">let</span> [ _u , _v , _w ] <span class="hljs-keyword">of</span> G.in( u ) ... ;
+
+<span class="hljs-keyword">for</span> ( <span class="hljs-keyword">let</span> _v <span class="hljs-keyword">of</span> N( G , u ) ) ... ;
+
+G.edel( e ) ;
+
+G.vdel( v ) ;
+
+G.edel( u ) ;</code></pre></div></div></div></div></body></html>
