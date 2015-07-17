@@ -1,7 +1,11 @@
 [js-adjacency-matrix](http://aureooms.github.io/js-adjacency-matrix)
 ==
 
-Adjacency matrix code bricks for JavaScript
+Adjacency matrix code bricks for JavaScript.
+
+```js
+for ( let [ u , v , w ] of E( G ) ) ... ;
+```
 
 [![NPM license](http://img.shields.io/npm/l/aureooms-js-adjacency-matrix.svg?style=flat)](https://raw.githubusercontent.com/aureooms/js-adjacency-matrix/master/LICENSE)
 [![NPM version](http://img.shields.io/npm/v/aureooms-js-adjacency-matrix.svg?style=flat)](https://www.npmjs.org/package/aureooms-js-adjacency-matrix)
@@ -92,4 +96,39 @@ Alternatively, you can use any tool mentioned [here](http://bower.io/docs/tools/
 ### jam
 ```js
 require( [ "aureooms-js-adjacency-matrix" ] , function ( adjacencymatrix ) { ... } ) ;
+```
+
+## Use
+
+
+```js
+let Graph = adjacencymatrix.Matrix.References ;
+
+let { V , E , N } = require( "aureooms-js-graph-theory-notation" ) ;
+
+let G = new Graph( ) ;
+
+let u = G.vadd( "some satellite data" ) ;
+
+let v = G.vadd( [ "some" , "satellite" , "data" ] ) ;
+
+let w = 7 ; // weight
+
+let e = G.eadd( u , v , w ) ;
+
+for ( let _v of V( G ) ) ... ;
+
+for ( let [ _u , _v , _w ] of E( G ) ) ... ;
+
+for ( let [ _u , _v , _w ] of G.out( u ) ... ;
+
+for ( let [ _u , _v , _w ] of G.in( u ) ... ;
+
+for ( let _v of N( G , u ) ) ... ;
+
+G.edel( e ) ;
+
+G.vdel( v ) ;
+
+G.edel( u ) ;
 ```

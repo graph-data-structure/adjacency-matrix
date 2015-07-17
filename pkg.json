@@ -1,17 +1,19 @@
 {
-	"name": "adjacency-matrix",
-	"debug": false,
-	"src": "js/src/",
-	"code": {
-		"main": [
-			"js",
-			"dist",
-			"adjacency-matrix.js"
-		],
-		"test": [
-			"test",
-			"js"
-		]
-	},
-	"out": "js/dist/"
+  "name": "adjacency-matrix",
+  "debug": false,
+  "src": "js/src/",
+  "code": {
+    "main": [
+      "js",
+      "dist",
+      "adjacency-matrix.js"
+    ],
+    "test": [
+      "test",
+      "js"
+    ]
+  },
+  "out": "js/dist/",
+  "babel": { "stage" : 0 },
+  "rec": true
 }
