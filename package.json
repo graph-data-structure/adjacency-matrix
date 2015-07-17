@@ -1,0 +1,45 @@
+{
+	"name": "aureooms-js-adjacency-matrix",
+	"homepage": "http://aureooms.github.io/js-adjacency-matrix/",
+	"keywords": [
+		"adjacency",
+		"adjacency matrix",
+		"bricks",
+		"edge",
+		"edges",
+		"ender",
+		"graph",
+		"graphs",
+		"javascript",
+		"js",
+		"matrix",
+		"network",
+		"networks",
+		"vertex",
+		"vertices"
+	],
+	"scripts": {
+		"doc": "./node_modules/.bin/groc",
+		"test": "./node_modules/.bin/aureooms-node-package-test",
+		"build": "./node_modules/.bin/aureooms-node-package-build"
+	},
+	"license": "AGPL-3.0",
+	"version": "0.0.0",
+	"spm": {
+		"main": "js/dist/adjacency-matrix.js"
+	},
+	"main": "js/dist/adjacency-matrix.js",
+	"description": "Adjacency matrix code bricks for JavaScript",
+	"repository": {
+		"url": "https://github.com/aureooms/js-adjacency-matrix.git",
+		"type": "git"
+	},
+	"author": "aureooms",
+	"devDependencies": {
+		"aureooms-node-package": "^4.2.5"
+	},
+	"dependencies": {},
+	"bugs": {
+		"url": "https://github.com/aureooms/js-adjacency-matrix/issues"
+	}
+}

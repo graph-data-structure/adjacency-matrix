@@ -1,0 +1,21 @@
+{
+	"name": "aureooms-js-adjacency-matrix",
+	"homepage": "http://aureooms.github.io/js-adjacency-matrix/",
+	"license": "AGPL-3.0",
+	"version": "0.0.0",
+	"ignore": [
+		"js/index.js",
+		"js/src",
+		"test",
+		"pkg.json",
+		"package.json",
+		"inch.json",
+		".groc.json",
+		".travis.yml",
+		".codeclimate.yml",
+		".gitignore",
+		"README.md"
+	],
+	"main": "js/dist/adjacency-matrix.js",
+	"description": "Adjacency matrix code bricks for JavaScript"
+}
