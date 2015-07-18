@@ -1,7 +1,8 @@
 [js-adjacency-matrix](http://aureooms.github.io/js-adjacency-matrix)
 ==
 
-Adjacency matrix code bricks for JavaScript.
+Adjacency matrix code bricks for JavaScript. Parent is
+[js-gn](https://github.com/aureooms/js-gn).
 
 ```js
 for ( let [ u , v , w ] of E( G ) ) ... ;
