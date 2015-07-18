@@ -158,35 +158,65 @@ f.event={add:function(a,c,d,e,g){var h,i,j,k,l,m,n,o,p,q,r,s;if(!(a.nodeType===3
         }
       ]
     }, {
-      "type": "folder",
+      "type": "file",
       "data": {
-        "path": "Matrix",
+        "language": {
+          "nameMatchers": [".js"],
+          "pygmentsLexer": "javascript",
+          "multiLineComment": ["/*", "*", "*/"],
+          "singleLineComment": ["//"],
+          "ignorePrefix": "}",
+          "foldPrefix": "^",
+          "name": "JavaScript"
+        },
+        "sourcePath": "/home/aureooms/dev/js/js-adjacency-matrix/js/src/Edge.js",
+        "projectPath": "js/src/Edge.js",
+        "targetPath": "Edge",
+        "pageTitle": "Edge",
+        "title": "Edge"
+      },
+      "depth": 1,
+      "outline": []
+    }, {
+      "type": "file",
+      "data": {
+        "language": {
+          "nameMatchers": [".js"],
+          "pygmentsLexer": "javascript",
+          "multiLineComment": ["/*", "*", "*/"],
+          "singleLineComment": ["//"],
+          "ignorePrefix": "}",
+          "foldPrefix": "^",
+          "name": "JavaScript"
+        },
+        "sourcePath": "/home/aureooms/dev/js/js-adjacency-matrix/js/src/Matrix.js",
+        "projectPath": "js/src/Matrix.js",
+        "targetPath": "Matrix",
+        "pageTitle": "Matrix",
         "title": "Matrix"
       },
       "depth": 1,
-      "children": [
-        {
-          "type": "file",
-          "data": {
-            "language": {
-              "nameMatchers": [".js"],
-              "pygmentsLexer": "javascript",
-              "multiLineComment": ["/*", "*", "*/"],
-              "singleLineComment": ["//"],
-              "ignorePrefix": "}",
-              "foldPrefix": "^",
-              "name": "JavaScript"
-            },
-            "sourcePath": "/home/aureooms/dev/js/js-adjacency-matrix/js/src/Matrix/References.js",
-            "projectPath": "js/src/Matrix/References.js",
-            "targetPath": "Matrix/References",
-            "pageTitle": "Matrix/References",
-            "title": "References"
-          },
-          "depth": 2,
-          "outline": []
-        }
-      ]
+      "outline": []
+    }, {
+      "type": "file",
+      "data": {
+        "language": {
+          "nameMatchers": [".js"],
+          "pygmentsLexer": "javascript",
+          "multiLineComment": ["/*", "*", "*/"],
+          "singleLineComment": ["//"],
+          "ignorePrefix": "}",
+          "foldPrefix": "^",
+          "name": "JavaScript"
+        },
+        "sourcePath": "/home/aureooms/dev/js/js-adjacency-matrix/js/src/Vertex.js",
+        "projectPath": "js/src/Vertex.js",
+        "targetPath": "Vertex",
+        "pageTitle": "Vertex",
+        "title": "Vertex"
+      },
+      "depth": 1,
+      "outline": []
     }
   ];
 
