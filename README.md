@@ -5,7 +5,7 @@ Adjacency matrix code bricks for JavaScript. Parent is
 [js-gn](https://github.com/aureooms/js-gn).
 
 ```js
-for ( let [ u , v , w ] of E( G ) ) ... ;
+for ( let e of E( G ) ) ... ;
 ```
 
 [![NPM license](http://img.shields.io/npm/l/aureooms-js-adjacency-matrix.svg?style=flat)](https://raw.githubusercontent.com/aureooms/js-adjacency-matrix/master/LICENSE)
@@ -103,33 +103,27 @@ require( [ "aureooms-js-adjacency-matrix" ] , function ( adjacencymatrix ) { ...
 
 
 ```js
-let Graph = adjacencymatrix.Matrix.References ;
+let Graph = adjacencymatrix.Matrix ;
 
 let { V , E , N } = require( "aureooms-js-graph-theory-notation" ) ;
 
 let G = new Graph( ) ;
 
-let u = G.vadd( "some satellite data" ) ;
+let u = G.vadd( ) ;
 
-let v = G.vadd( [ "some" , "satellite" , "data" ] ) ;
+let v = G.vadd( ) ;
 
-let w = 7 ; // weight
+let e = G.eadd( u , v ) ;
 
-let e = G.eadd( u , v , w ) ;
+for ( let w of V( G ) ) ... ;
 
-for ( let _v of V( G ) ) ... ;
+for ( let e of E( G ) ) ... ;
 
-for ( let [ _u , _v , _w ] of E( G ) ) ... ;
-
-for ( let [ _u , _v , _w ] of G.out( u ) ... ;
-
-for ( let [ _u , _v , _w ] of G.in( u ) ... ;
-
-for ( let _v of N( G , u ) ) ... ;
+for ( let w of N( G , u ) ) ... ;
 
 G.edel( e ) ;
 
 G.vdel( v ) ;
 
-G.edel( u ) ;
+G.vdel( u ) ;
 ```
