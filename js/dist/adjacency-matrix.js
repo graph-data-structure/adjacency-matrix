@@ -2,7 +2,7 @@
 
 (function () {
 
-	"use strict";
+	'use strict';
 
 	var definition = function definition(exports, undefined) {
 
@@ -16,9 +16,9 @@
 
 		exports.Edge = Edge;
 
-		/* js/src/Matrix.js */
+		/* js/src/Graph.js */
 
-		var Matrix = function Matrix() {
+		var Graph = function Graph() {
 
 			this.V = [];
 			this.E = [];
@@ -28,7 +28,7 @@
    * O(n²), amortized O(n)
    * @return {vertex} a vertex reference
    */
-		Matrix.prototype.vadd = function () {
+		Graph.prototype.vadd = function () {
 			var _this = this;
 
 			var len = this.E.length;
@@ -79,7 +79,7 @@
    * Fast if removing vertices in LIFO order.
    * @param {vertex} v is a vertex reference
    */
-		Matrix.prototype.vdel = function (v) {
+		Graph.prototype.vdel = function (v) {
 
 			// id to delete
 			var i = v.id;
@@ -133,7 +133,7 @@
    * @param {weight} w
    * @return {edge} an edge reference
    */
-		Matrix.prototype.eadd = function (u, v) {
+		Graph.prototype.eadd = function (u, v) {
 
 			var i = u.id,
 			    j = v.id;
@@ -148,7 +148,7 @@
    * O(1)
    * @param {edge} e is an edge reference
    */
-		Matrix.prototype.edel = function (e) {
+		Graph.prototype.edel = function (e) {
 
 			var i = e.u.id,
 			    j = e.v.id;
@@ -160,7 +160,7 @@
 		/**
    * O(n)
    */
-		Matrix.prototype.vitr = regeneratorRuntime.mark(function callee$2$0() {
+		Graph.prototype.vitr = regeneratorRuntime.mark(function callee$2$0() {
 			return regeneratorRuntime.wrap(function callee$2$0$(context$3$0) {
 				while (1) switch (context$3$0.prev = context$3$0.next) {
 					case 0:
@@ -176,7 +176,7 @@
 		/**
    * O(n)
    */
-		Matrix.prototype.iitr = regeneratorRuntime.mark(function callee$2$0(v) {
+		Graph.prototype.iitr = regeneratorRuntime.mark(function callee$2$0(v) {
 			var i, _iteratorNormalCompletion2, _didIteratorError2, _iteratorError2, _iterator2, _step2, e;
 
 			return regeneratorRuntime.wrap(function callee$2$0$(context$3$0) {
@@ -257,7 +257,7 @@
 		/**
    * O(n)
    */
-		Matrix.prototype.nitr = regeneratorRuntime.mark(function callee$2$0(w) {
+		Graph.prototype.nitr = regeneratorRuntime.mark(function callee$2$0(w) {
 			var _iteratorNormalCompletion3, _didIteratorError3, _iteratorError3, _iterator3, _step3, _step3$value, u, v;
 
 			return regeneratorRuntime.wrap(function callee$2$0$(context$3$0) {
@@ -339,7 +339,7 @@
 		/**
    * O(n²)
    */
-		Matrix.prototype.eitr = regeneratorRuntime.mark(function callee$2$0() {
+		Graph.prototype.eitr = regeneratorRuntime.mark(function callee$2$0() {
 			var len, _iteratorNormalCompletion4, _didIteratorError4, _iteratorError4, _iterator4, _step4, v, i, _e, j, e;
 
 			return regeneratorRuntime.wrap(function callee$2$0$(context$3$0) {
@@ -433,7 +433,7 @@
 			}, callee$2$0, this, [[4, 25, 29, 37], [30,, 32, 36]]);
 		});
 
-		Matrix.prototype.edges = regeneratorRuntime.mark(function callee$2$0() {
+		Graph.prototype.edges = regeneratorRuntime.mark(function callee$2$0() {
 			var _iteratorNormalCompletion5, _didIteratorError5, _iteratorError5, _iterator5, _step5, e;
 
 			return regeneratorRuntime.wrap(function callee$2$0$(context$3$0) {
@@ -501,7 +501,7 @@
 			}, callee$2$0, this, [[3, 14, 18, 26], [19,, 21, 25]]);
 		});
 
-		Matrix.prototype.incident = regeneratorRuntime.mark(function callee$2$0(v) {
+		Graph.prototype.incident = regeneratorRuntime.mark(function callee$2$0(v) {
 			var _iteratorNormalCompletion6, _didIteratorError6, _iteratorError6, _iterator6, _step6, e;
 
 			return regeneratorRuntime.wrap(function callee$2$0$(context$3$0) {
@@ -569,12 +569,12 @@
 			}, callee$2$0, this, [[3, 14, 18, 26], [19,, 21, 25]]);
 		});
 
-		Matrix.prototype.endpoints = function (e) {
+		Graph.prototype.endpoints = function (e) {
 
 			return [e.u, e.v];
 		};
 
-		exports.Matrix = Matrix;
+		exports.Graph = Graph;
 
 		/* js/src/Vertex.js */
 

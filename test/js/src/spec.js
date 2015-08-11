@@ -1,5 +1,5 @@
 
 var spec = require( "aureooms-js-graph-spec" ) ;
 
-spec.undirected1( "Matrix" , adjacencymatrix.Matrix ) ;
-spec.undirected2( "Matrix" , adjacencymatrix.Matrix ) ;
+spec.undirected1( "Adjacency Matrix Graph" , adjacencymatrix.Graph ) ;
+spec.undirected2( "Adjacency Matrix Graph" , adjacencymatrix.Graph ) ;

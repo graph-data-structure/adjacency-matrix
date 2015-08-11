@@ -1,5 +1,5 @@
 
-const Matrix = function ( ) {
+const Graph = function ( ) {
 
 	this.V = [ ] ;
 	this.E = [ ] ;
@@ -10,7 +10,7 @@ const Matrix = function ( ) {
  * O(n²), amortized O(n)
  * @return {vertex} a vertex reference
  */
-Matrix.prototype.vadd = function ( ) {
+Graph.prototype.vadd = function ( ) {
 
 	const len = this.E.length ;
 	const ref = new Vertex( len ) ;
@@ -33,7 +33,7 @@ Matrix.prototype.vadd = function ( ) {
  * Fast if removing vertices in LIFO order.
  * @param {vertex} v is a vertex reference
  */
-Matrix.prototype.vdel = function ( v ) {
+Graph.prototype.vdel = function ( v ) {
 
 	// id to delete
 	const i = v.id ;
@@ -83,7 +83,7 @@ Matrix.prototype.vdel = function ( v ) {
  * @param {weight} w
  * @return {edge} an edge reference
  */
-Matrix.prototype.eadd = function ( u , v ) {
+Graph.prototype.eadd = function ( u , v ) {
 
 	const i = u.id , j = v.id ;
 
@@ -98,7 +98,7 @@ Matrix.prototype.eadd = function ( u , v ) {
  * O(1)
  * @param {edge} e is an edge reference
  */
-Matrix.prototype.edel = function ( e ) {
+Graph.prototype.edel = function ( e ) {
 
 	var i = e.u.id , j = e.v.id ;
 
@@ -110,7 +110,7 @@ Matrix.prototype.edel = function ( e ) {
 /**
  * O(n)
  */
-Matrix.prototype.vitr = function* ( ) {
+Graph.prototype.vitr = function* ( ) {
 
 	yield* this.V ;
 
@@ -119,7 +119,7 @@ Matrix.prototype.vitr = function* ( ) {
 /**
  * O(n)
  */
-Matrix.prototype.iitr = function* ( v ) {
+Graph.prototype.iitr = function* ( v ) {
 
 	const i = v.id ;
 
@@ -136,7 +136,7 @@ Matrix.prototype.iitr = function* ( v ) {
 /**
  * O(n)
  */
-Matrix.prototype.nitr = function* ( w ) {
+Graph.prototype.nitr = function* ( w ) {
 
 	for ( let { u , v } of this.E[w.id] ) {
 
@@ -151,7 +151,7 @@ Matrix.prototype.nitr = function* ( w ) {
 /**
  * O(n²)
  */
-Matrix.prototype.eitr = function* ( ) {
+Graph.prototype.eitr = function* ( ) {
 
 	const len = this.V.length ;
 
@@ -174,22 +174,22 @@ Matrix.prototype.eitr = function* ( ) {
 
 } ;
 
-Matrix.prototype.edges = function* ( ) {
+Graph.prototype.edges = function* ( ) {
 
 	for ( let e of this.eitr( ) ) yield [ e.u , e.v , e ] ;
 
 } ;
 
-Matrix.prototype.incident = function* ( v ) {
+Graph.prototype.incident = function* ( v ) {
 
 	for ( let e of this.iitr( v ) ) yield [ e.u , e.v , e ] ;
 
 } ;
 
-Matrix.prototype.endpoints = function ( e ) {
+Graph.prototype.endpoints = function ( e ) {
 
 	return [ e.u , e.v ] ;
 
 } ;
 
-exports.Matrix = Matrix ;
+exports.Graph = Graph ;
