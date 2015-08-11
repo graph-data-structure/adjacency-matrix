@@ -4,7 +4,7 @@
 		"js/dist/adjacency-matrix.js"
 	],
 	"license": "AGPL-3.0",
-	"version": "2.0.1",
+	"version": "3.0.0",
 	"repo": "aureooms/js-adjacency-matrix",
 	"main": "js/dist/adjacency-matrix.js",
 	"description": "Adjacency matrix code bricks for JavaScript"
