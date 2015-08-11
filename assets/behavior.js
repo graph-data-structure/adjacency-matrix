@@ -189,11 +189,11 @@ f.event={add:function(a,c,d,e,g){var h,i,j,k,l,m,n,o,p,q,r,s;if(!(a.nodeType===3
           "foldPrefix": "^",
           "name": "JavaScript"
         },
-        "sourcePath": "/home/aureooms/dev/js/js-adjacency-matrix/js/src/Matrix.js",
-        "projectPath": "js/src/Matrix.js",
-        "targetPath": "Matrix",
-        "pageTitle": "Matrix",
-        "title": "Matrix"
+        "sourcePath": "/home/aureooms/dev/js/js-adjacency-matrix/js/src/Graph.js",
+        "projectPath": "js/src/Graph.js",
+        "targetPath": "Graph",
+        "pageTitle": "Graph",
+        "title": "Graph"
       },
       "depth": 1,
       "outline": []
