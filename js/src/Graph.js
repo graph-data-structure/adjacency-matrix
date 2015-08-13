@@ -192,8 +192,17 @@ Graph.prototype.incident = function* ( v ) {
 
 } ;
 
-Graph.prototype.ingoing = Graph.prototype.incident ;
-Graph.prototype.outgoing = Graph.prototype.incident ;
+Graph.prototype.ingoing = function* ( v ) {
+
+	for ( let e of this.initr( v ) ) yield [ e.u === v ? e.v : u , v , e ] ;
+
+} ;
+
+Graph.prototype.outgoing = function* ( v ) {
+
+	for ( let e of this.outitr( v ) ) yield [ v , e.u === v ? e.v : u , e ] ;
+
+} ;
 
 Graph.prototype.endpoints = function ( e ) {
 
