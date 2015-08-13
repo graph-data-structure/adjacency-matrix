@@ -107,6 +107,8 @@ NB : after removing row k &lt; len - 1 = j</p></div></div><div class="code"><div
 
 } ;
 
+Graph.prototype.vertices = Graph.prototype.vitr ;
+
 Graph.prototype.edges = <span class="hljs-function"><span class="hljs-keyword">function</span>* (<span class="hljs-params"> </span>) </span>{
 
 	<span class="hljs-keyword">for</span> ( <span class="hljs-keyword">let</span> e <span class="hljs-keyword">of</span> <span class="hljs-keyword">this</span>.eitr( ) ) <span class="hljs-keyword">yield</span> [ e.u , e.v , e ] ;
