@@ -798,7 +798,7 @@
    */
 		DiGraph.prototype.reverse = function () {
 
-			var len = this.V.len;
+			var len = this.V.length;
 
 			for (var i = 0; i < len; ++i) {
 
