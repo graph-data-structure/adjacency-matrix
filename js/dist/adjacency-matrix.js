@@ -491,7 +491,7 @@
 		});
 
 		DiGraph.prototype.dpitr = regeneratorRuntime.mark(function callee$2$0(w) {
-			var j, _iteratorNormalCompletion5, _didIteratorError5, _iteratorError5, _iterator5, _step5, _e, _u;
+			var j, _iteratorNormalCompletion5, _didIteratorError5, _iteratorError5, _iterator5, _step5, _e, u;
 
 			return regeneratorRuntime.wrap(function callee$2$0$(context$3$0) {
 				while (1) switch (context$3$0.prev = context$3$0.next) {
@@ -510,15 +510,15 @@
 						}
 
 						_e = _step5.value;
-						_u = _e[j].u;
+						u = _e[j].u;
 
-						if (!(_u !== null)) {
+						if (!(u !== null)) {
 							context$3$0.next = 12;
 							break;
 						}
 
 						context$3$0.next = 12;
-						return _u;
+						return u;
 
 					case 12:
 						_iteratorNormalCompletion5 = true;
@@ -1127,7 +1127,7 @@
    * O(n)
    */
 		Graph.prototype.nitr = regeneratorRuntime.mark(function callee$2$0(w) {
-			var _iteratorNormalCompletion11, _didIteratorError11, _iteratorError11, _iterator11, _step11, _step11$value, _u2, v;
+			var _iteratorNormalCompletion11, _didIteratorError11, _iteratorError11, _iterator11, _step11, _step11$value, u, v;
 
 			return regeneratorRuntime.wrap(function callee$2$0$(context$3$0) {
 				while (1) switch (context$3$0.prev = context$3$0.next) {
@@ -1145,10 +1145,10 @@
 						}
 
 						_step11$value = _step11.value;
-						_u2 = _step11$value.u;
+						u = _step11$value.u;
 						v = _step11$value.v;
 
-						if (!(_u2 === null)) {
+						if (!(u === null)) {
 							context$3$0.next = 11;
 							break;
 						}
@@ -1157,7 +1157,7 @@
 
 					case 11:
 						context$3$0.next = 13;
-						return _u2 === w ? v : _u2;
+						return u === w ? v : u;
 
 					case 13:
 						_iteratorNormalCompletion11 = true;
@@ -1366,7 +1366,7 @@
 
 						e = _step14.value;
 						context$3$0.next = 9;
-						return [e.u === v ? e.v : u, v, e];
+						return [e.u === v ? e.v : e.u, v, e];
 
 					case 9:
 						_iteratorNormalCompletion14 = true;
@@ -1434,7 +1434,7 @@
 
 						e = _step15.value;
 						context$3$0.next = 9;
-						return [v, e.u === v ? e.v : u, e];
+						return [v, e.u === v ? e.v : e.u, e];
 
 					case 9:
 						_iteratorNormalCompletion15 = true;
