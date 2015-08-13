@@ -1,11 +1,13 @@
 [js-adjacency-matrix](http://aureooms.github.io/js-adjacency-matrix)
 ==
 
-Adjacency matrix code bricks for JavaScript. Parent is
-[js-gn](https://github.com/aureooms/js-gn).
+Adjacency matrix code bricks for JavaScript.
+Follows the specification in
+[js-graph-spec](https://github.com/aureooms/js-graph-spec).
+Parent is [js-gn](https://github.com/aureooms/js-gn).
 
 ```js
-for ( let e of E( G ) ) ... ;
+for ( let v of V( G ) ) ... ;
 ```
 
 [![NPM license](http://img.shields.io/npm/l/aureooms-js-adjacency-matrix.svg?style=flat)](https://raw.githubusercontent.com/aureooms/js-adjacency-matrix/master/LICENSE)
@@ -103,7 +105,8 @@ require( [ "aureooms-js-adjacency-matrix" ] , function ( adjacencymatrix ) { ...
 
 
 ```js
-let Graph = adjacencymatrix.Matrix ;
+let Graph = adjacencymatrix.Graph ;
+// use `adjacencymatrix.DiGraph` for directed graphs
 
 let { V , E , N } = require( "aureooms-js-graph-theory-notation" ) ;
 
