@@ -256,7 +256,7 @@ DiGraph.prototype.endpoints = function ( e ) {
  */
 DiGraph.prototype.reverse = function ( ) {
 
-	const len = this.V.len ;
+	const len = this.V.length ;
 
 	for ( let i = 0 ; i < len ; ++i ) {
 
