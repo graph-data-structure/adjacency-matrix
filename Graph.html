@@ -124,8 +124,17 @@ Graph.prototype.incident = <span class="hljs-function"><span class="hljs-keyword
 
 } ;
 
-Graph.prototype.ingoing = Graph.prototype.incident ;
-Graph.prototype.outgoing = Graph.prototype.incident ;
+Graph.prototype.ingoing = <span class="hljs-function"><span class="hljs-keyword">function</span>* (<span class="hljs-params"> v </span>) </span>{
+
+	<span class="hljs-keyword">for</span> ( <span class="hljs-keyword">let</span> e <span class="hljs-keyword">of</span> <span class="hljs-keyword">this</span>.initr( v ) ) <span class="hljs-keyword">yield</span> [ e.u === v ? e.v : u , v , e ] ;
+
+} ;
+
+Graph.prototype.outgoing = <span class="hljs-function"><span class="hljs-keyword">function</span>* (<span class="hljs-params"> v </span>) </span>{
+
+	<span class="hljs-keyword">for</span> ( <span class="hljs-keyword">let</span> e <span class="hljs-keyword">of</span> <span class="hljs-keyword">this</span>.outitr( v ) ) <span class="hljs-keyword">yield</span> [ v , e.u === v ? e.v : u , e ] ;
+
+} ;
 
 Graph.prototype.endpoints = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"> e </span>) </span>{
 
