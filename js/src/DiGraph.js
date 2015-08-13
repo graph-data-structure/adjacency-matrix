@@ -130,7 +130,7 @@ DiGraph.prototype.eitr = function* ( ) {
 
 		const _e = this.E[i] ;
 
-		for ( let j = 0 ; i < len ; ++j ) {
+		for ( let j = 0 ; j < len ; ++j ) {
 
 			const e = _e[j] ;
 
