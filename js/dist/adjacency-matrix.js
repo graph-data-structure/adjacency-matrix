@@ -433,6 +433,8 @@
 			}, callee$2$0, this, [[4, 25, 29, 37], [30,, 32, 36]]);
 		});
 
+		Graph.prototype.vertices = Graph.prototype.vitr;
+
 		Graph.prototype.edges = regeneratorRuntime.mark(function callee$2$0() {
 			var _iteratorNormalCompletion5, _didIteratorError5, _iteratorError5, _iterator5, _step5, e;
 
