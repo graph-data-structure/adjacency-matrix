@@ -12,7 +12,7 @@ const Graph = function ( ) {
  */
 Graph.prototype.vadd = function ( ) {
 
-	const len = this.E.length ;
+	const len = this.V.length ;
 	const ref = new Vertex( len ) ;
 
 	// add a vertex
@@ -100,10 +100,8 @@ Graph.prototype.eadd = function ( u , v ) {
  */
 Graph.prototype.edel = function ( e ) {
 
-	var i = e.u.id , j = e.v.id ;
-
-	this.E[i][j].u = null ;
-	this.E[i][j].v = null ;
+	e.u = null ;
+	e.v = null ;
 
 } ;
 
@@ -124,9 +122,8 @@ Graph.prototype.eitr = function* ( ) {
 
 	const len = this.V.length ;
 
-	for ( let v of this.V ) {
+	for ( let i = 0 ; i < len ; ++i ) {
 
-		const i = v.id ;
 		const _e = this.E[i] ;
 
 		for ( let j = i ; j < len ; ++j ) {
