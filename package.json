@@ -36,8 +36,8 @@
 	},
 	"author": "aureooms",
 	"devDependencies": {
-		"aureooms-js-graph-spec": "^1.0.3",
-		"aureooms-js-itertools": "^1.1.2",
+		"aureooms-js-graph-spec": "^2.0.1",
+		"aureooms-js-itertools": "^1.2.0",
 		"aureooms-node-package": "^5.0.2"
 	},
 	"dependencies": {},
