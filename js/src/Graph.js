@@ -116,37 +116,6 @@ Graph.prototype.vitr = function* ( ) {
 
 } ;
 
-/**
- * O(n)
- */
-Graph.prototype.iitr = function* ( v ) {
-
-	const i = v.id ;
-
-	for ( let e of this.E[i] ) {
-
-		if ( e.u === null ) continue ;
-
-		yield e ;
-
-	}
-
-} ;
-
-/**
- * O(n)
- */
-Graph.prototype.nitr = function* ( w ) {
-
-	for ( let { u , v } of this.E[w.id] ) {
-
-		if ( u === null ) continue ;
-
-		yield u === w ? v : u ;
-
-	}
-
-} ;
 
 /**
  * O(n²)
@@ -174,6 +143,44 @@ Graph.prototype.eitr = function* ( ) {
 
 } ;
 
+/**
+ * O(n)
+ */
+Graph.prototype.iitr = function* ( v ) {
+
+	const i = v.id ;
+
+	for ( let e of this.E[i] ) {
+
+		if ( e.u === null ) continue ;
+
+		yield e ;
+
+	}
+
+} ;
+
+Graph.prototype.initr = Graph.prototype.iitr ;
+Graph.prototype.outitr = Graph.prototype.iitr ;
+
+/**
+ * O(n)
+ */
+Graph.prototype.nitr = function* ( w ) {
+
+	for ( let { u , v } of this.E[w.id] ) {
+
+		if ( u === null ) continue ;
+
+		yield u === w ? v : u ;
+
+	}
+
+} ;
+
+Graph.prototype.dsitr = Graph.prototype.nitr ;
+Graph.prototype.dpitr = Graph.prototype.nitr ;
+
 Graph.prototype.vertices = Graph.prototype.vitr ;
 
 Graph.prototype.edges = function* ( ) {
@@ -188,10 +195,16 @@ Graph.prototype.incident = function* ( v ) {
 
 } ;
 
+Graph.prototype.ingoing = Graph.prototype.incident ;
+Graph.prototype.outgoing = Graph.prototype.incident ;
+
 Graph.prototype.endpoints = function ( e ) {
 
 	return [ e.u , e.v ] ;
 
 } ;
+
+
+Graph.prototype.reverse = function ( ) { } ;
 
 exports.Graph = Graph ;
