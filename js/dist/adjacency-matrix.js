@@ -186,7 +186,7 @@
 						j = 0;
 
 					case 5:
-						if (!(i < len)) {
+						if (!(j < len)) {
 							context$3$0.next = 14;
 							break;
 						}
