@@ -1505,10 +1505,10 @@
 	if (typeof exports === "object") {
 		definition(exports);
 	} else if (typeof define === "function" && define.amd) {
-		define("aureooms-js-adjacency-matrix", [], function () {
+		define("@aureooms/js-adjacency-matrix", [], function () {
 			return definition({});
 		});
 	} else if (typeof window === "object" && typeof window.document === "object") {
 		definition(window["adjacencymatrix"] = {});
-	} else console.error("unable to detect type of module to define for aureooms-js-adjacency-matrix");
+	} else console.error("unable to detect type of module to define for @aureooms/js-adjacency-matrix");
 })();
