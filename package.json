@@ -1,5 +1,5 @@
 {
-	"name": "aureooms-js-adjacency-matrix",
+	"name": "@aureooms/js-adjacency-matrix",
 	"homepage": "http://aureooms.github.io/js-adjacency-matrix/",
 	"keywords": [
 		"adjacency",
@@ -36,8 +36,8 @@
 	},
 	"author": "aureooms",
 	"devDependencies": {
-		"aureooms-js-graph-spec": "^5.0.0",
-		"aureooms-js-itertools": "^3.0.0",
+		"@aureooms/js-graph-spec": "^5.0.0",
+		"@aureooms/js-itertools": "^3.0.0",
 		"aureooms-node-package": "^6.0.1"
 	},
 	"dependencies": {},
