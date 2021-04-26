@@ -31,7 +31,7 @@
 	"main": "js/dist/adjacency-matrix.js",
 	"description": "Adjacency matrix code bricks for JavaScript",
 	"repository": {
-		"url": "https://github.com/aureooms/js-adjacency-matrix.git",
+		"url": "https://github.com/make-github-pseudonymous-again/js-adjacency-matrix.git",
 		"type": "git"
 	},
 	"author": "aureooms",
@@ -42,6 +42,6 @@
 	},
 	"dependencies": {},
 	"bugs": {
-		"url": "https://github.com/aureooms/js-adjacency-matrix/issues"
+		"url": "https://github.com/make-github-pseudonymous-again/js-adjacency-matrix/issues"
 	}
 }
