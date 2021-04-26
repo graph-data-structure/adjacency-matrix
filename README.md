@@ -1,4 +1,4 @@
-[js-adjacency-matrix](http://aureooms.github.io/js-adjacency-matrix)
+[js-adjacency-matrix](http://make-github-pseudonymous-again.github.io/js-adjacency-matrix)
 ==
 
 Adjacency matrix code bricks for JavaScript.
