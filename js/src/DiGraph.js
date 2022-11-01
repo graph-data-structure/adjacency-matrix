@@ -21,7 +21,7 @@ DiGraph.prototype.vadd = function ( ) {
 	this.V.push( ref ) ;
 
 	// add a row
-	this.E.push( [ for ( v of this.V ) new Edge( null , null ) ] ) ;
+	this.E.push( this.V.map(() => new Edge( null , null )) ) ;
 
 	// add a column (last row already has a cell for this column)
 	for ( let j = 0 ; j < len ; ++j ) this.E[j].push( new Edge( null , null ) ) ;
