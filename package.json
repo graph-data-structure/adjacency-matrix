@@ -1,70 +1,17 @@
 {
   "name": "@aureooms/js-adjacency-matrix",
-  "homepage": "http://make-github-pseudonymous-again.github.io/js-adjacency-matrix/",
-  "keywords": [
-    "adjacency",
-    "adjacency matrix",
-    "bricks",
-    "edge",
-    "edges",
-    "ender",
-    "graph",
-    "graphs",
-    "javascript",
-    "js",
-    "matrix",
-    "network",
-    "networks",
-    "vertex",
-    "vertices"
-  ],
-  "scripts": {
-    "test": "ava",
-    "build": "NODE_ENV=production microbundle",
-    "build-docs": "esdoc",
-    "lint": "true",
-    "prepare": "npm run build",
-    "cover": "NODE_ENV=cover c8 --all --src src --reporter lcov --reporter text-summary --reporter text npm test",
-    "dev": "npm run lint-config-and-fix && npm run lint-and-fix && npm run cover -- -- -st --fail-fast",
-    "release": "np --message ':hatching_chick: release: Bumping to v%s.'"
-  },
-  "license": "AGPL-3.0",
-  "version": "3.1.6",
-  "main": "dist/index.js",
   "description": "Adjacency matrix code bricks for JavaScript",
-  "repository": {
-    "url": "https://github.com/make-github-pseudonymous-again/js-adjacency-matrix.git",
-    "type": "git"
-  },
+  "version": "3.1.6",
   "author": "aureooms",
-  "devDependencies": {
-    "@aureooms/js-graph-spec": "^5.0.2",
-    "@aureooms/js-itertools": "^3.0.0",
-    "@babel/core": "7.20.2",
-    "@babel/preset-env": "7.20.2",
-    "@babel/register": "7.18.9",
-    "@commitlint/cli": "16.3.0",
-    "@js-library/commitlint-config": "0.0.4",
-    "ava": "3.15.0",
-    "babel-plugin-transform-remove-console": "6.9.4",
-    "babel-plugin-unassert": "3.2.0",
-    "babel-preset-power-assert": "3.0.0",
-    "c8": "7.12.0",
-    "esdoc": "1.1.0",
-    "esdoc-inject-script-plugin": "1.0.0",
-    "esdoc-inject-style-plugin": "1.0.0",
-    "esdoc-standard-plugin": "1.0.0",
-    "fixpack": "4.0.0",
-    "husky": "7.0.4",
-    "lint-staged": "12.5.0",
-    "microbundle": "0.15.1",
-    "np": "7.6.2",
-    "pinst": "2.1.6",
-    "power-assert": "1.6.1"
-  },
-  "dependencies": {},
-  "bugs": {
-    "url": "https://github.com/make-github-pseudonymous-again/js-adjacency-matrix/issues"
+  "ava": {
+    "files": [
+      "test/src/**/*"
+    ],
+    "require": [
+      "regenerator-runtime/runtime",
+      "@babel/register"
+    ],
+    "timeout": "1m"
   },
   "babel": {
     "sourceMaps": true,
@@ -152,20 +99,35 @@
       }
     }
   },
-  "ava": {
-    "files": [
-      "test/src/**/*"
-    ],
-    "require": [
-      "regenerator-runtime/runtime",
-      "@babel/register"
-    ],
-    "timeout": "1m"
+  "bugs": {
+    "url": "https://github.com/make-github-pseudonymous-again/js-adjacency-matrix/issues"
   },
-  "source": "src/index.js",
-  "module": "dist/index.module.mjs",
-  "umd:main": "dist/index.umd.js",
-  "unpkg": "dist/index.umd.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@aureooms/js-graph-spec": "^5.0.2",
+    "@aureooms/js-itertools": "^3.0.0",
+    "@babel/core": "7.20.2",
+    "@babel/preset-env": "7.20.2",
+    "@babel/register": "7.18.9",
+    "@commitlint/cli": "16.3.0",
+    "@js-library/commitlint-config": "0.0.4",
+    "ava": "3.15.0",
+    "babel-plugin-transform-remove-console": "6.9.4",
+    "babel-plugin-unassert": "3.2.0",
+    "babel-preset-power-assert": "3.0.0",
+    "c8": "7.12.0",
+    "esdoc": "1.1.0",
+    "esdoc-inject-script-plugin": "1.0.0",
+    "esdoc-inject-style-plugin": "1.0.0",
+    "esdoc-standard-plugin": "1.0.0",
+    "fixpack": "4.0.0",
+    "husky": "7.0.4",
+    "lint-staged": "12.5.0",
+    "microbundle": "0.15.1",
+    "np": "7.6.2",
+    "pinst": "2.1.6",
+    "power-assert": "1.6.1"
+  },
   "exports": {
     ".": {
       "browser": "./dist/index.module.mjs",
@@ -177,5 +139,43 @@
   "files": [
     "dist"
   ],
-  "sideEffects": false
+  "homepage": "http://make-github-pseudonymous-again.github.io/js-adjacency-matrix/",
+  "keywords": [
+    "adjacency",
+    "adjacency matrix",
+    "bricks",
+    "edge",
+    "edges",
+    "ender",
+    "graph",
+    "graphs",
+    "javascript",
+    "js",
+    "matrix",
+    "network",
+    "networks",
+    "vertex",
+    "vertices"
+  ],
+  "license": "AGPL-3.0",
+  "main": "dist/index.js",
+  "module": "dist/index.module.mjs",
+  "repository": {
+    "url": "https://github.com/make-github-pseudonymous-again/js-adjacency-matrix.git",
+    "type": "git"
+  },
+  "scripts": {
+    "build": "NODE_ENV=production microbundle",
+    "build-docs": "esdoc",
+    "cover": "NODE_ENV=cover c8 --all --src src --reporter lcov --reporter text-summary --reporter text npm test",
+    "dev": "npm run lint-config-and-fix && npm run lint-and-fix && npm run cover -- -- -st --fail-fast",
+    "lint": "true",
+    "prepare": "npm run build",
+    "release": "np --message ':hatching_chick: release: Bumping to v%s.'",
+    "test": "ava"
+  },
+  "sideEffects": false,
+  "source": "src/index.js",
+  "umd:main": "dist/index.umd.js",
+  "unpkg": "dist/index.umd.js"
 }
