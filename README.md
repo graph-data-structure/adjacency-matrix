@@ -6,6 +6,10 @@ Follows the specification in
 [@graph-data-structure/specification](https://github.com/graph-data-structure/specification).
 Parent is [@aureooms/js-gn](https://github.com/make-github-pseudonymous-again/js-gn).
 
+> :warning: Depending on your environment, the code may require
+> `regeneratorRuntime` to be defined, for instance by importing
+> [regenerator-runtime/runtime](https://www.npmjs.com/package/regenerator-runtime).
+
 ```js
 for ( let v of V( G ) ) ... ;
 ```
