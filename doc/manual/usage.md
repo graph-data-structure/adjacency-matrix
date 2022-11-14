@@ -13,7 +13,7 @@ import 'regenerator-runtime/runtime.js';
 
 Then, import the library where needed
 ```js
-const adjacency_matrix = await import('@graph-data-structure/adjacency-matrix');
+const {Graph, DiGraph} = await import('@graph-data-structure/adjacency-matrix');
 // or
-import * as adjacency_matrix from '@graph-data-structure/adjacency-matrix';
+import {Graph, DiGraph} from '@graph-data-structure/adjacency-matrix';
 ```
