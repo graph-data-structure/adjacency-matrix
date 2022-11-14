@@ -1,8 +1,8 @@
 {
-  "name": "@aureooms/js-adjacency-matrix",
+  "name": "@graph-data-structure/adjacency-matrix",
   "description": "Adjacency matrix code bricks for JavaScript",
   "version": "3.1.6",
-  "author": "aureooms",
+  "author": "make-github-pseudonymous-again",
   "ava": {
     "files": [
       "test/src/**/*"
@@ -102,7 +102,7 @@
     }
   },
   "bugs": {
-    "url": "https://github.com/make-github-pseudonymous-again/js-adjacency-matrix/issues"
+    "url": "https://github.com/graph-data-structure/adjacency-matrix/issues"
   },
   "dependencies": {},
   "devDependencies": {
@@ -142,7 +142,7 @@
   "files": [
     "dist"
   ],
-  "homepage": "http://make-github-pseudonymous-again.github.io/js-adjacency-matrix/",
+  "homepage": "http://graph-data-structure.github.io/adjacency-matrix",
   "keywords": [
     "adjacency",
     "adjacency matrix",
@@ -164,7 +164,7 @@
   "main": "dist/index.js",
   "module": "dist/index.module.mjs",
   "repository": {
-    "url": "https://github.com/make-github-pseudonymous-again/js-adjacency-matrix.git",
+    "url": "https://github.com/graph-data-structure/adjacency-matrix.git",
     "type": "git"
   },
   "scripts": {

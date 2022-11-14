@@ -8,15 +8,15 @@ or [jspm](https://jspm.org/docs).
 
 ### yarn
 ```terminal
-yarn add @aureooms/js-adjacency-matrix
+yarn add @graph-data-structure/adjacency-matrix
 ```
 
 ### npm
 ```terminal
-npm install @aureooms/js-adjacency-matrix --save
+npm install @graph-data-structure/adjacency-matrix --save
 ```
 
 ### jspm
 ```terminal
-jspm install npm:@aureooms/js-adjacency-matrix
+jspm install npm:@graph-data-structure/adjacency-matrix
 ```

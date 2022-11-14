@@ -13,7 +13,7 @@
           "autoPrivate": true
         },
         "brand": {
-          "title": "@aureooms/js-adjacency-matrix"
+          "title": "@graph-data-structure/adjacency-matrix"
         },
         "test": {
           "type": "ava",

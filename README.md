@@ -1,4 +1,4 @@
-[@aureooms/js-adjacency-matrix](https://make-github-pseudonymous-again.github.io/js-adjacency-matrix)
+[@graph-data-structure/adjacency-matrix](https://graph-data-structure.github.io/adjacency-matrix)
 ==
 
 Adjacency matrix code bricks for JavaScript.
@@ -10,19 +10,19 @@ Parent is [@aureooms/js-gn](https://github.com/make-github-pseudonymous-again/js
 for ( let v of V( G ) ) ... ;
 ```
 
-[![License](https://img.shields.io/github/license/make-github-pseudonymous-again/js-adjacency-matrix.svg)](https://raw.githubusercontent.com/make-github-pseudonymous-again/js-adjacency-matrix/main/LICENSE)
-[![Version](https://img.shields.io/npm/v/@aureooms/js-adjacency-matrix.svg)](https://www.npmjs.org/package/@aureooms/js-adjacency-matrix)
-[![Tests](https://img.shields.io/github/workflow/status/make-github-pseudonymous-again/js-adjacency-matrix/ci:cover?event=push&label=tests)](https://github.com/make-github-pseudonymous-again/js-adjacency-matrix/actions/workflows/ci:cover.yml?query=branch:main)
-[![Dependencies](https://img.shields.io/librariesio/github/make-github-pseudonymous-again/js-adjacency-matrix.svg)](https://github.com/make-github-pseudonymous-again/js-adjacency-matrix/network/dependencies)
-[![GitHub issues](https://img.shields.io/github/issues/make-github-pseudonymous-again/js-adjacency-matrix.svg)](https://github.com/make-github-pseudonymous-again/js-adjacency-matrix/issues)
-[![Downloads](https://img.shields.io/npm/dm/@aureooms/js-adjacency-matrix.svg)](https://www.npmjs.org/package/@aureooms/js-adjacency-matrix)
+[![License](https://img.shields.io/github/license/graph-data-structure/adjacency-matrix.svg)](https://raw.githubusercontent.com/graph-data-structure/adjacency-matrix/main/LICENSE)
+[![Version](https://img.shields.io/npm/v/@graph-data-structure/adjacency-matrix.svg)](https://www.npmjs.org/package/@graph-data-structure/adjacency-matrix)
+[![Tests](https://img.shields.io/github/workflow/status/graph-data-structure/adjacency-matrix/ci:cover?event=push&label=tests)](https://github.com/graph-data-structure/adjacency-matrix/actions/workflows/ci:cover.yml?query=branch:main)
+[![Dependencies](https://img.shields.io/librariesio/github/graph-data-structure/adjacency-matrix.svg)](https://github.com/graph-data-structure/adjacency-matrix/network/dependencies)
+[![GitHub issues](https://img.shields.io/github/issues/graph-data-structure/adjacency-matrix.svg)](https://github.com/graph-data-structure/adjacency-matrix/issues)
+[![Downloads](https://img.shields.io/npm/dm/@graph-data-structure/adjacency-matrix.svg)](https://www.npmjs.org/package/@graph-data-structure/adjacency-matrix)
 
-[![Code issues](https://img.shields.io/codeclimate/issues/make-github-pseudonymous-again/js-adjacency-matrix.svg)](https://codeclimate.com/github/make-github-pseudonymous-again/js-adjacency-matrix/issues)
-[![Code maintainability](https://img.shields.io/codeclimate/maintainability/make-github-pseudonymous-again/js-adjacency-matrix.svg)](https://codeclimate.com/github/make-github-pseudonymous-again/js-adjacency-matrix/trends/churn)
-[![Code coverage (cov)](https://img.shields.io/codecov/c/gh/make-github-pseudonymous-again/js-adjacency-matrix/main.svg)](https://codecov.io/gh/make-github-pseudonymous-again/js-adjacency-matrix)
-[![Code technical debt](https://img.shields.io/codeclimate/tech-debt/make-github-pseudonymous-again/js-adjacency-matrix.svg)](https://codeclimate.com/github/make-github-pseudonymous-again/js-adjacency-matrix/trends/technical_debt)
-[![Documentation](https://make-github-pseudonymous-again.github.io/js-adjacency-matrix//badge.svg)](https://make-github-pseudonymous-again.github.io/js-adjacency-matrix//source.html)
-[![Package size](https://img.shields.io/bundlephobia/minzip/@aureooms/js-adjacency-matrix)](https://bundlephobia.com/result?p=@aureooms/js-adjacency-matrix)
+[![Code issues](https://img.shields.io/codeclimate/issues/graph-data-structure/adjacency-matrix.svg)](https://codeclimate.com/github/graph-data-structure/adjacency-matrix/issues)
+[![Code maintainability](https://img.shields.io/codeclimate/maintainability/graph-data-structure/adjacency-matrix.svg)](https://codeclimate.com/github/graph-data-structure/adjacency-matrix/trends/churn)
+[![Code coverage (cov)](https://img.shields.io/codecov/c/gh/graph-data-structure/adjacency-matrix/main.svg)](https://codecov.io/gh/graph-data-structure/adjacency-matrix)
+[![Code technical debt](https://img.shields.io/codeclimate/tech-debt/graph-data-structure/adjacency-matrix.svg)](https://codeclimate.com/github/graph-data-structure/adjacency-matrix/trends/technical_debt)
+[![Documentation](https://graph-data-structure.github.io/adjacency-matrix/badge.svg)](https://graph-data-structure.github.io/adjacency-matrix/source.html)
+[![Package size](https://img.shields.io/bundlephobia/minzip/@graph-data-structure/adjacency-matrix)](https://bundlephobia.com/result?p=@graph-data-structure/adjacency-matrix)
 
 
 ## Use
