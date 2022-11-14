@@ -19,9 +19,10 @@
     "vertices"
   ],
   "scripts": {
-    "test": "./node_modules/.bin/aureooms-node-package-test",
+    "test": "ava",
     "build": "./node_modules/.bin/aureooms-node-package-build",
-    "build-docs": "esdoc"
+    "build-docs": "esdoc",
+    "lint": "true"
   },
   "license": "AGPL-3.0",
   "version": "3.1.6",
