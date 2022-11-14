@@ -2,7 +2,89 @@
   "name": "@graph-data-structure/adjacency-matrix",
   "description": "Adjacency matrix code bricks for JavaScript",
   "version": "3.1.6",
+  "license": "AGPL-3.0",
   "author": "make-github-pseudonymous-again",
+  "homepage": "https://graph-data-structure.github.io/adjacency-matrix",
+  "repository": {
+    "url": "https://github.com/graph-data-structure/adjacency-matrix",
+    "type": "git"
+  },
+  "bugs": {
+    "url": "https://github.com/graph-data-structure/adjacency-matrix/issues"
+  },
+  "keywords": [
+    "adjacency",
+    "adjacency matrix",
+    "bricks",
+    "edge",
+    "edges",
+    "ender",
+    "graph",
+    "graphs",
+    "javascript",
+    "js",
+    "matrix",
+    "network",
+    "networks",
+    "vertex",
+    "vertices"
+  ],
+  "sideEffects": false,
+  "source": "src/index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.module.mjs",
+  "umd:main": "dist/index.umd.js",
+  "unpkg": "dist/index.umd.js",
+  "exports": {
+    ".": {
+      "browser": "./dist/index.module.mjs",
+      "umd": "./dist/index.umd.js",
+      "require": "./dist/index.js",
+      "default": "./dist/index.modern.mjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "NODE_ENV=production microbundle",
+    "build-docs": "esdoc",
+    "cover": "NODE_ENV=cover c8 --all --src src --reporter lcov --reporter text-summary --reporter text npm test",
+    "dev": "npm run lint-config-and-fix && npm run lint-and-fix && npm run cover -- -- -st --fail-fast",
+    "lint": "true",
+    "lint-config": "fixpack --dryRun",
+    "lint-config-and-fix": "fixpack || fixpack",
+    "prepare": "npm run build",
+    "release": "np --message ':hatching_chick: release: Bumping to v%s.'",
+    "test": "ava"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "7.20.2",
+    "@babel/plugin-transform-destructuring": "^7.20.2",
+    "@babel/plugin-transform-for-of": "^7.18.8",
+    "@babel/preset-env": "7.20.2",
+    "@babel/register": "7.18.9",
+    "@commitlint/cli": "16.3.0",
+    "@graph-data-structure/specification": "^6.0.2",
+    "@js-library/commitlint-config": "0.0.4",
+    "ava": "3.15.0",
+    "babel-plugin-transform-remove-console": "6.9.4",
+    "babel-plugin-unassert": "3.2.0",
+    "babel-preset-power-assert": "3.0.0",
+    "c8": "7.12.0",
+    "esdoc": "1.1.0",
+    "esdoc-inject-script-plugin": "1.0.0",
+    "esdoc-inject-style-plugin": "1.0.0",
+    "esdoc-standard-plugin": "1.0.0",
+    "fixpack": "4.0.0",
+    "husky": "7.0.4",
+    "lint-staged": "12.5.0",
+    "microbundle": "0.15.1",
+    "np": "7.6.2",
+    "pinst": "2.1.6",
+    "power-assert": "1.6.1"
+  },
   "ava": {
     "files": [
       "test/src/**/*"
@@ -100,87 +182,5 @@
         ]
       }
     }
-  },
-  "bugs": {
-    "url": "https://github.com/graph-data-structure/adjacency-matrix/issues"
-  },
-  "dependencies": {},
-  "devDependencies": {
-    "@babel/core": "7.20.2",
-    "@babel/plugin-transform-destructuring": "^7.20.2",
-    "@babel/plugin-transform-for-of": "^7.18.8",
-    "@babel/preset-env": "7.20.2",
-    "@babel/register": "7.18.9",
-    "@commitlint/cli": "16.3.0",
-    "@graph-data-structure/specification": "^6.0.2",
-    "@js-library/commitlint-config": "0.0.4",
-    "ava": "3.15.0",
-    "babel-plugin-transform-remove-console": "6.9.4",
-    "babel-plugin-unassert": "3.2.0",
-    "babel-preset-power-assert": "3.0.0",
-    "c8": "7.12.0",
-    "esdoc": "1.1.0",
-    "esdoc-inject-script-plugin": "1.0.0",
-    "esdoc-inject-style-plugin": "1.0.0",
-    "esdoc-standard-plugin": "1.0.0",
-    "fixpack": "4.0.0",
-    "husky": "7.0.4",
-    "lint-staged": "12.5.0",
-    "microbundle": "0.15.1",
-    "np": "7.6.2",
-    "pinst": "2.1.6",
-    "power-assert": "1.6.1"
-  },
-  "exports": {
-    ".": {
-      "browser": "./dist/index.module.mjs",
-      "umd": "./dist/index.umd.js",
-      "require": "./dist/index.js",
-      "default": "./dist/index.modern.mjs"
-    }
-  },
-  "files": [
-    "dist"
-  ],
-  "homepage": "https://graph-data-structure.github.io/adjacency-matrix",
-  "keywords": [
-    "adjacency",
-    "adjacency matrix",
-    "bricks",
-    "edge",
-    "edges",
-    "ender",
-    "graph",
-    "graphs",
-    "javascript",
-    "js",
-    "matrix",
-    "network",
-    "networks",
-    "vertex",
-    "vertices"
-  ],
-  "license": "AGPL-3.0",
-  "main": "dist/index.js",
-  "module": "dist/index.module.mjs",
-  "repository": {
-    "url": "https://github.com/graph-data-structure/adjacency-matrix",
-    "type": "git"
-  },
-  "scripts": {
-    "build": "NODE_ENV=production microbundle",
-    "build-docs": "esdoc",
-    "cover": "NODE_ENV=cover c8 --all --src src --reporter lcov --reporter text-summary --reporter text npm test",
-    "dev": "npm run lint-config-and-fix && npm run lint-and-fix && npm run cover -- -- -st --fail-fast",
-    "lint": "true",
-    "prepare": "npm run build",
-    "release": "np --message ':hatching_chick: release: Bumping to v%s.'",
-    "test": "ava",
-    "lint-config-and-fix": "fixpack || fixpack",
-    "lint-config": "fixpack --dryRun"
-  },
-  "sideEffects": false,
-  "source": "src/index.js",
-  "umd:main": "dist/index.umd.js",
-  "unpkg": "dist/index.umd.js"
+  }
 }
