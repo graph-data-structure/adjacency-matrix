@@ -20,7 +20,7 @@
   ],
   "scripts": {
     "test": "ava",
-    "build": "./node_modules/.bin/aureooms-node-package-build",
+    "build": "NODE_ENV=production microbundle",
     "build-docs": "esdoc",
     "lint": "true"
   },
@@ -29,7 +29,7 @@
   "spm": {
     "main": "js/dist/adjacency-matrix.js"
   },
-  "main": "js/dist/adjacency-matrix.js",
+  "main": "dist/index.js",
   "description": "Adjacency matrix code bricks for JavaScript",
   "repository": {
     "url": "https://github.com/make-github-pseudonymous-again/js-adjacency-matrix.git",
@@ -161,5 +161,17 @@
       "@babel/register"
     ],
     "timeout": "1m"
+  },
+  "source": "src/index.js",
+  "module": "dist/index.module.mjs",
+  "umd:main": "dist/index.umd.js",
+  "unpkg": "dist/index.umd.js",
+  "exports": {
+    ".": {
+      "browser": "./dist/index.module.mjs",
+      "umd": "./dist/index.umd.js",
+      "require": "./dist/index.js",
+      "default": "./dist/index.modern.mjs"
+    }
   }
 }
