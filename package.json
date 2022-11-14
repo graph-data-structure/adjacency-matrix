@@ -164,7 +164,7 @@
   "main": "dist/index.js",
   "module": "dist/index.module.mjs",
   "repository": {
-    "url": "https://github.com/graph-data-structure/adjacency-matrix.git",
+    "url": "https://github.com/graph-data-structure/adjacency-matrix",
     "type": "git"
   },
   "scripts": {
