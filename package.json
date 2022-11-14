@@ -43,7 +43,6 @@
   "devDependencies": {
     "@aureooms/js-graph-spec": "^5.0.0",
     "@aureooms/js-itertools": "^3.0.0",
-    "aureooms-node-package": "^6.0.1",
     "@babel/core": "7.20.2",
     "@babel/preset-env": "7.20.2",
     "@babel/register": "7.18.9",
