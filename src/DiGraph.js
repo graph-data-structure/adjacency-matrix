@@ -1,16 +1,16 @@
+import Vertex from './Vertex.js';
+import Edge from './Edge.js';
 
-export function DiGraph ( ) {
-
+export default function DiGraph ( ) {
 	this.V = [ ] ;
 	this.E = [ ] ;
-
 }
 
 /**
  * O(n²), amortized O(n)
  * f this.iitr( v ) ) yield [ e.u , e.v , e ] ;
  *
- * @return {vertex} a vertex reference
+ * @return {Vertex} a vertex reference
  */
 DiGraph.prototype.vadd = function ( ) {
 
@@ -33,7 +33,7 @@ DiGraph.prototype.vadd = function ( ) {
 /**
  * O(n²), amortized O(n)
  * Fast if removing vertices in LIFO order.
- * @param {vertex} v is a vertex reference
+ * @param {Vertex} v is a vertex reference
  */
 DiGraph.prototype.vdel = function ( v ) {
 
@@ -80,10 +80,10 @@ DiGraph.prototype.vdel = function ( v ) {
 
 /**
  * O(1)
- * @param {vertex} u is a vertex reference
- * @param {vertex} v is a vertex reference
+ * @param {Vertex} u is a vertex reference
+ * @param {Vertex} v is a vertex reference
  * @param {weight} w
- * @return {edge} an edge reference
+ * @return {Edge} an edge reference
  */
 DiGraph.prototype.eadd = function ( u , v ) {
 
@@ -100,7 +100,7 @@ DiGraph.prototype.eadd = function ( u , v ) {
 
 /**
  * O(1)
- * @param {edge} e is an edge reference
+ * @param {Edge} e is an edge reference
  */
 DiGraph.prototype.edel = function ( e ) {
 

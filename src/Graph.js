@@ -1,14 +1,14 @@
+import Vertex from './Vertex.js';
+import Edge from './Edge.js';
 
-export function Graph ( ) {
-
+export default function Graph ( ) {
 	this.V = [ ] ;
 	this.E = [ ] ;
-
 }
 
 /**
  * O(n²), amortized O(n)
- * @return {vertex} a vertex reference
+ * @return {Vertex} a vertex reference
  */
 Graph.prototype.vadd = function ( ) {
 
@@ -31,7 +31,7 @@ Graph.prototype.vadd = function ( ) {
 /**
  * O(n²), amortized O(n)
  * Fast if removing vertices in LIFO order.
- * @param {vertex} v is a vertex reference
+ * @param {Vertex} v is a vertex reference
  */
 Graph.prototype.vdel = function ( v ) {
 
@@ -78,10 +78,10 @@ Graph.prototype.vdel = function ( v ) {
 
 /**
  * O(1)
- * @param {vertex} u is a vertex reference
- * @param {vertex} v is a vertex reference
+ * @param {Vertex} u is a vertex reference
+ * @param {Vertex} v is a vertex reference
  * @param {weight} w
- * @return {edge} an edge reference
+ * @return {Edge} an edge reference
  */
 Graph.prototype.eadd = function ( u , v ) {
 
@@ -96,7 +96,7 @@ Graph.prototype.eadd = function ( u , v ) {
 
 /**
  * O(1)
- * @param {edge} e is an edge reference
+ * @param {Edge} e is an edge reference
  */
 Graph.prototype.edel = function ( e ) {
 

@@ -1,7 +1,3 @@
-
-export function Vertex ( id ) {
-
+export default function Vertex ( id ) {
 	this.id = id ;
-
 }
-
