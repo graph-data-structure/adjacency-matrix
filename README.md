@@ -33,7 +33,7 @@ for ( let v of V( G ) ) ... ;
 
 
 ```js
-import {Graph, DiGraph} from '@aureoms/js-adjacency-matrix';
+import {Graph, DiGraph} from '@graph-data-structure/adjacency-matrix';
 // use `DiGraph` for directed graphs
 
 let { V , E , N } = require( "@aureooms/js-graph-theory-notation" ) ;
