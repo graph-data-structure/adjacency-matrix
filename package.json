@@ -19,9 +19,9 @@
     "vertices"
   ],
   "scripts": {
-    "doc": "./node_modules/.bin/groc",
     "test": "./node_modules/.bin/aureooms-node-package-test",
-    "build": "./node_modules/.bin/aureooms-node-package-build"
+    "build": "./node_modules/.bin/aureooms-node-package-build",
+    "build-docs": "esdoc"
   },
   "license": "AGPL-3.0",
   "version": "3.1.6",
