@@ -12,7 +12,7 @@ for ( let v of V( G ) ) ... ;
 
 [![License](https://img.shields.io/github/license/graph-data-structure/adjacency-matrix.svg)](https://raw.githubusercontent.com/graph-data-structure/adjacency-matrix/main/LICENSE)
 [![Version](https://img.shields.io/npm/v/@graph-data-structure/adjacency-matrix.svg)](https://www.npmjs.org/package/@graph-data-structure/adjacency-matrix)
-[![Build](https://img.shields.io/travis/graph-data-structure/adjacency-matrix/main.svg)](https://travis-ci.com/graph-data-structure/adjacency-matrix/branches)
+[![Tests](https://img.shields.io/github/workflow/status/graph-data-structure/adjacency-matrix/ci:test?event=push&label=tests)](https://github.com/graph-data-structure/adjacency-matrix/actions/workflows/ci:test.yml?query=branch:main)
 [![Dependencies](https://img.shields.io/librariesio/github/graph-data-structure/adjacency-matrix.svg)](https://github.com/graph-data-structure/adjacency-matrix/network/dependencies)
 [![GitHub issues](https://img.shields.io/github/issues/graph-data-structure/adjacency-matrix.svg)](https://github.com/graph-data-structure/adjacency-matrix/issues)
 [![Downloads](https://img.shields.io/npm/dm/@graph-data-structure/adjacency-matrix.svg)](https://www.npmjs.org/package/@graph-data-structure/adjacency-matrix)
