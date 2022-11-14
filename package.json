@@ -30,18 +30,19 @@
     "vertices"
   ],
   "sideEffects": false,
+  "type": "module",
   "source": "src/index.js",
   "main": "dist/index.cjs",
-  "module": "dist/index.module.mjs",
+  "module": "dist/index.module.js",
   "esmodule": "dist/index.modern.js",
   "umd:main": "dist/index.umd.js",
   "unpkg": "dist/index.umd.js",
   "exports": {
     ".": {
-      "browser": "./dist/index.module.mjs",
+      "browser": "./dist/index.module.js",
       "umd": "./dist/index.umd.js",
       "require": "./dist/index.cjs",
-      "default": "./dist/index.modern.mjs"
+      "default": "./dist/index.modern.js"
     }
   },
   "files": [
@@ -77,13 +78,11 @@
     "@babel/plugin-transform-destructuring": "^7.20.2",
     "@babel/plugin-transform-for-of": "^7.18.8",
     "@babel/preset-env": "7.20.2",
-    "@babel/register": "7.18.9",
-    "@commitlint/cli": "16.3.0",
     "@graph-data-structure/specification": "^6.0.2",
-    "@js-library/commitlint-config": "0.0.4",
+    "@node-loader/babel": "^2.0.1",
     "@node-loader/core": "2.0.0",
     "@node-loader/import-maps": "1.1.0",
-    "ava": "3.15.0",
+    "ava": "5.1.0",
     "babel-plugin-transform-remove-console": "6.9.4",
     "babel-plugin-unassert": "3.2.0",
     "babel-preset-power-assert": "3.0.0",
@@ -93,12 +92,10 @@
     "esdoc-inject-style-plugin": "1.0.0",
     "esdoc-standard-plugin": "1.0.0",
     "fixpack": "4.0.0",
-    "husky": "7.0.4",
-    "lint-staged": "12.5.0",
     "microbundle": "0.15.1",
     "np": "7.6.2",
-    "pinst": "2.1.6",
     "power-assert": "1.6.1",
+    "regenerator-runtime": "^0.13.10",
     "xo": "0.52.4"
   },
   "ava": {
@@ -109,21 +106,12 @@
       "--experimental-loader=@node-loader/core"
     ],
     "require": [
-      "regenerator-runtime/runtime",
-      "@babel/register"
+      "regenerator-runtime/runtime"
     ],
     "timeout": "1m"
   },
   "babel": {
     "sourceMaps": true,
-    "presets": [
-      [
-        "@babel/preset-env",
-        {
-          "targets": "current node"
-        }
-      ]
-    ],
     "plugins": [
       [
         "transform-remove-console",
