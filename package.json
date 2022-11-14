@@ -47,6 +47,9 @@
   "files": [
     "dist"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "NODE_ENV=production microbundle",
     "build-docs": "esdoc",
