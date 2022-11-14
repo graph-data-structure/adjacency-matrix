@@ -10,17 +10,19 @@ Parent is [@aureooms/js-gn](https://github.com/make-github-pseudonymous-again/js
 for ( let v of V( G ) ) ... ;
 ```
 
-[![License](https://img.shields.io/github/license/make-github-pseudonymous-again/js-adjacency-matrix.svg?style=flat)](https://raw.githubusercontent.com/make-github-pseudonymous-again/js-adjacency-matrix/main/LICENSE)
-[![NPM version](https://img.shields.io/npm/v/@aureooms/js-adjacency-matrix.svg?style=flat)](https://www.npmjs.org/package/@aureooms/js-adjacency-matrix)
-[![Bower version](https://img.shields.io/bower/v/@aureooms/js-adjacency-matrix.svg?style=flat)](http://bower.io/search/?q=@aureooms/js-adjacency-matrix)
-[![Build Status](https://img.shields.io/travis/make-github-pseudonymous-again/js-adjacency-matrix.svg?style=flat)](https://travis-ci.org/make-github-pseudonymous-again/js-adjacency-matrix)
-[![Coverage Status](https://img.shields.io/coveralls/make-github-pseudonymous-again/js-adjacency-matrix.svg?style=flat)](https://coveralls.io/r/make-github-pseudonymous-again/js-adjacency-matrix)
-[![Dependencies Status](https://img.shields.io/david/make-github-pseudonymous-again/js-adjacency-matrix.svg?style=flat)](https://david-dm.org/make-github-pseudonymous-again/js-adjacency-matrix#info=dependencies)
-[![devDependencies Status](https://img.shields.io/david/dev/make-github-pseudonymous-again/js-adjacency-matrix.svg?style=flat)](https://david-dm.org/make-github-pseudonymous-again/js-adjacency-matrix#info=devDependencies)
-[![Code Climate](https://img.shields.io/codeclimate/github/make-github-pseudonymous-again/js-adjacency-matrix.svg?style=flat)](https://codeclimate.com/github/make-github-pseudonymous-again/js-adjacency-matrix)
-[![NPM downloads per month](https://img.shields.io/npm/dm/@aureooms/js-adjacency-matrix.svg?style=flat)](https://www.npmjs.org/package/@aureooms/js-adjacency-matrix)
-[![GitHub issues](https://img.shields.io/github/issues/make-github-pseudonymous-again/js-adjacency-matrix.svg?style=flat)](https://github.com/make-github-pseudonymous-again/js-adjacency-matrix/issues)
-[![Inline docs](http://inch-ci.org/github/make-github-pseudonymous-again/js-adjacency-matrix.svg?branch=master&style=shields)](http://inch-ci.org/github/make-github-pseudonymous-again/js-adjacency-matrix)
+[![License](https://img.shields.io/github/license/make-github-pseudonymous-again/js-adjacency-matrix.svg)](https://raw.githubusercontent.com/make-github-pseudonymous-again/js-adjacency-matrix/main/LICENSE)
+[![Version](https://img.shields.io/npm/v/@aureooms/js-adjacency-matrix.svg)](https://www.npmjs.org/package/@aureooms/js-adjacency-matrix)
+[![Tests](https://img.shields.io/github/workflow/status/make-github-pseudonymous-again/js-adjacency-matrix/ci:cover?event=push&label=tests)](https://github.com/make-github-pseudonymous-again/js-adjacency-matrix/actions/workflows/ci:cover.yml?query=branch:main)
+[![Dependencies](https://img.shields.io/librariesio/github/make-github-pseudonymous-again/js-adjacency-matrix.svg)](https://github.com/make-github-pseudonymous-again/js-adjacency-matrix/network/dependencies)
+[![GitHub issues](https://img.shields.io/github/issues/make-github-pseudonymous-again/js-adjacency-matrix.svg)](https://github.com/make-github-pseudonymous-again/js-adjacency-matrix/issues)
+[![Downloads](https://img.shields.io/npm/dm/@aureooms/js-adjacency-matrix.svg)](https://www.npmjs.org/package/@aureooms/js-adjacency-matrix)
+
+[![Code issues](https://img.shields.io/codeclimate/issues/make-github-pseudonymous-again/js-adjacency-matrix.svg)](https://codeclimate.com/github/make-github-pseudonymous-again/js-adjacency-matrix/issues)
+[![Code maintainability](https://img.shields.io/codeclimate/maintainability/make-github-pseudonymous-again/js-adjacency-matrix.svg)](https://codeclimate.com/github/make-github-pseudonymous-again/js-adjacency-matrix/trends/churn)
+[![Code coverage (cov)](https://img.shields.io/codecov/c/gh/make-github-pseudonymous-again/js-adjacency-matrix/main.svg)](https://codecov.io/gh/make-github-pseudonymous-again/js-adjacency-matrix)
+[![Code technical debt](https://img.shields.io/codeclimate/tech-debt/make-github-pseudonymous-again/js-adjacency-matrix.svg)](https://codeclimate.com/github/make-github-pseudonymous-again/js-adjacency-matrix/trends/technical_debt)
+[![Documentation](https://make-github-pseudonymous-again.github.io/js-adjacency-matrix//badge.svg)](https://make-github-pseudonymous-again.github.io/js-adjacency-matrix//source.html)
+[![Package size](https://img.shields.io/bundlephobia/minzip/@aureooms/js-adjacency-matrix)](https://bundlephobia.com/result?p=@aureooms/js-adjacency-matrix)
 
 Can be managed through [jspm](https://github.com/jspm/jspm-cli),
 [duo](https://github.com/duojs/duo),
