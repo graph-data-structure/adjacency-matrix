@@ -1,9 +1,8 @@
 
-const Edge = function ( u , v ) {
+export function Edge ( u , v ) {
 
 	this.u = u ;
 	this.v = v ;
 
-} ;
+}
 
-exports.Edge = Edge ;

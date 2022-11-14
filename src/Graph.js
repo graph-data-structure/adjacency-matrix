@@ -1,10 +1,10 @@
 
-const Graph = function ( ) {
+export function Graph ( ) {
 
 	this.V = [ ] ;
 	this.E = [ ] ;
 
-} ;
+}
 
 /**
  * O(n²), amortized O(n)
@@ -26,7 +26,7 @@ Graph.prototype.vadd = function ( ) {
 
 	return ref ;
 
-} ;
+}
 
 /**
  * O(n²), amortized O(n)
@@ -74,7 +74,7 @@ Graph.prototype.vdel = function ( v ) {
 	// NB : after removing row k < len - 1 = j
 	for ( let k = 0 ; k < j ; ++k ) this.E[k].splice( j , 1 ) ;
 
-} ;
+}
 
 /**
  * O(1)
@@ -92,7 +92,7 @@ Graph.prototype.eadd = function ( u , v ) {
 
 	return this.E[i][j] ;
 
-} ;
+}
 
 /**
  * O(1)
@@ -103,7 +103,7 @@ Graph.prototype.edel = function ( e ) {
 	e.u = null ;
 	e.v = null ;
 
-} ;
+}
 
 /**
  * O(n)
@@ -112,7 +112,7 @@ Graph.prototype.vitr = function* ( ) {
 
 	yield* this.V ;
 
-} ;
+}
 
 
 /**
@@ -138,7 +138,7 @@ Graph.prototype.eitr = function* ( ) {
 
 	}
 
-} ;
+}
 
 /**
  * O(n)
@@ -155,7 +155,7 @@ Graph.prototype.iitr = function* ( v ) {
 
 	}
 
-} ;
+}
 
 Graph.prototype.initr = Graph.prototype.iitr ;
 Graph.prototype.outitr = Graph.prototype.iitr ;
@@ -173,7 +173,7 @@ Graph.prototype.nitr = function* ( w ) {
 
 	}
 
-} ;
+}
 
 Graph.prototype.dsitr = Graph.prototype.nitr ;
 Graph.prototype.dpitr = Graph.prototype.nitr ;
@@ -184,33 +184,32 @@ Graph.prototype.edges = function* ( ) {
 
 	for ( let e of this.eitr( ) ) yield [ e.u , e.v , e ] ;
 
-} ;
+}
 
 Graph.prototype.incident = function* ( v ) {
 
 	for ( let e of this.iitr( v ) ) yield [ e.u , e.v , e ] ;
 
-} ;
+}
 
 Graph.prototype.ingoing = function* ( v ) {
 
 	for ( let e of this.initr( v ) ) yield [ e.u === v ? e.v : e.u , v , e ] ;
 
-} ;
+}
 
 Graph.prototype.outgoing = function* ( v ) {
 
 	for ( let e of this.outitr( v ) ) yield [ v , e.u === v ? e.v : e.u , e ] ;
 
-} ;
+}
 
 Graph.prototype.endpoints = function ( e ) {
 
 	return [ e.u , e.v ] ;
 
-} ;
+}
 
 
 Graph.prototype.reverse = function ( ) { } ;
 
-exports.Graph = Graph ;

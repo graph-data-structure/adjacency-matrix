@@ -1,8 +1,7 @@
 
-const Vertex = function ( id ) {
+export function Vertex ( id ) {
 
 	this.id = id ;
 
-} ;
+}
 
-exports.Vertex = Vertex ;

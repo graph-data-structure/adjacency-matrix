@@ -1,10 +1,10 @@
 
-const DiGraph = function ( ) {
+export function DiGraph ( ) {
 
 	this.V = [ ] ;
 	this.E = [ ] ;
 
-} ;
+}
 
 /**
  * O(n²), amortized O(n)
@@ -28,7 +28,7 @@ DiGraph.prototype.vadd = function ( ) {
 
 	return ref ;
 
-} ;
+}
 
 /**
  * O(n²), amortized O(n)
@@ -76,7 +76,7 @@ DiGraph.prototype.vdel = function ( v ) {
 	// NB : after removing row k < len - 1 = j
 	for ( let k = 0 ; k < j ; ++k ) this.E[k].splice( j , 1 ) ;
 
-} ;
+}
 
 /**
  * O(1)
@@ -96,7 +96,7 @@ DiGraph.prototype.eadd = function ( u , v ) {
 
 	return e ;
 
-} ;
+}
 
 /**
  * O(1)
@@ -107,7 +107,7 @@ DiGraph.prototype.edel = function ( e ) {
 	e.u = null ;
 	e.v = null ;
 
-} ;
+}
 
 /**
  * O(n)
@@ -116,7 +116,7 @@ DiGraph.prototype.vitr = function* ( ) {
 
 	yield* this.V ;
 
-} ;
+}
 
 
 /**
@@ -142,7 +142,7 @@ DiGraph.prototype.eitr = function* ( ) {
 
 	}
 
-} ;
+}
 
 /**
  * O(n)
@@ -152,7 +152,7 @@ DiGraph.prototype.iitr = function* ( v ) {
 	yield* this.initr( v ) ;
 	yield* this.outitr( v ) ;
 
-} ;
+}
 
 DiGraph.prototype.initr = function* ( v ) {
 
@@ -168,7 +168,7 @@ DiGraph.prototype.initr = function* ( v ) {
 
 	}
 
-} ;
+}
 
 DiGraph.prototype.outitr = function* ( v ) {
 
@@ -182,7 +182,7 @@ DiGraph.prototype.outitr = function* ( v ) {
 
 	}
 
-} ;
+}
 
 /**
  * O(n)
@@ -192,7 +192,7 @@ DiGraph.prototype.nitr = function* ( w ) {
 	yield* this.dsitr( w ) ;
 	yield* this.dpitr( w ) ;
 
-} ;
+}
 
 DiGraph.prototype.dsitr = function* ( w ) {
 
@@ -202,7 +202,7 @@ DiGraph.prototype.dsitr = function* ( w ) {
 
 	}
 
-} ;
+}
 
 DiGraph.prototype.dpitr = function* ( w ) {
 
@@ -216,7 +216,7 @@ DiGraph.prototype.dpitr = function* ( w ) {
 
 	}
 
-} ;
+}
 
 DiGraph.prototype.vertices = DiGraph.prototype.vitr ;
 
@@ -224,32 +224,32 @@ DiGraph.prototype.edges = function* ( ) {
 
 	for ( let e of this.eitr( ) ) yield [ e.u , e.v , e ] ;
 
-} ;
+}
 
 DiGraph.prototype.incident = function* ( v ) {
 
 	yield* this.ingoing( v ) ;
 	yield* this.outgoing( v ) ;
 
-} ;
+}
 
 DiGraph.prototype.ingoing = function* ( v ) {
 
 	for ( let e of this.initr( v ) ) yield [ e.u , e.v , e ] ;
 
-} ;
+}
 
 DiGraph.prototype.outgoing = function* ( v ) {
 
 	for ( let e of this.outitr( v ) ) yield [ e.u , e.v , e ] ;
 
-} ;
+}
 
 DiGraph.prototype.endpoints = function ( e ) {
 
 	return [ e.u , e.v ] ;
 
-} ;
+}
 
 /**
  * O(n²)
@@ -272,6 +272,5 @@ DiGraph.prototype.reverse = function ( ) {
 
 	}
 
-} ;
+}
 
-exports.DiGraph = DiGraph ;
