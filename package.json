@@ -23,7 +23,8 @@
     "build": "NODE_ENV=production microbundle",
     "build-docs": "esdoc",
     "lint": "true",
-    "prepare": "npm run build"
+    "prepare": "npm run build",
+    "cover": "NODE_ENV=cover c8 --all --src src --reporter lcov --reporter text-summary --reporter text npm test"
   },
   "license": "AGPL-3.0",
   "version": "3.1.6",
