@@ -142,7 +142,7 @@
   "files": [
     "dist"
   ],
-  "homepage": "http://graph-data-structure.github.io/adjacency-matrix",
+  "homepage": "https://graph-data-structure.github.io/adjacency-matrix",
   "keywords": [
     "adjacency",
     "adjacency matrix",
